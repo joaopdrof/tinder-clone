@@ -23,7 +23,9 @@ body {
 .navbar i {
     font-size: 1.5rem;
     color: #dadfe6;
+    cursor: pointer;
 }
+
 
 .navbar i:nth-child(1){
     color: #fe466d;
@@ -82,9 +84,9 @@ body {
 /* Actions */
 .actions {
     display: flex;
-    flex: auto;
-    align-items: center;
     margin: 1rem 0;
+    width: 98vw;
+    justify-content: space-around;
 }
 
 .action {
@@ -106,19 +108,33 @@ body {
 }
 
 .actions .action:nth-child(1){
-    color: #fd5068
+    color: #ccc;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
 }
 
 .actions .action:nth-child(2){
-    margin: 0 1rem;
+    color: #fd5068
+}
+
+.actions .action:nth-child(3){
+    /* margin: 0 1rem; */
     color: #2db1ff;
     height: 50px;
     width: 50px;
     font-size: 1.5rem;
 }
 
-.actions .action:nth-child(3){
+.actions .action:nth-child(4){
     color: #1be4a1;
+}
+
+.actions .action:nth-child(5){
+    color: #cb27d1;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
 }
 
 /* Desktop View */
@@ -133,4 +149,7 @@ body {
         margin: auto;
     }
 
+    .actions{
+        width: 367px;
+    }
 }
